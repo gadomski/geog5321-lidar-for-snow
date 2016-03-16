@@ -88,12 +88,6 @@
           </aside>
         </section>
 
-        <section data-background="img/glv-lidar.png">
-          <aside class="notes">
-            http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.102012.26913.1
-          </aside>
-        </section>
-
         <section>
           <section>
             <h2>LiDAR</h2>
@@ -114,7 +108,32 @@
           </section>
 
           <section>
-            <h3>Reflectance</h3>
+            <h3>Terrestrial LiDAR</h3>
+
+            <img src="img/tls.jpg" alt="TLS" class="stretch">
+          </section>
+
+          <section>
+            <h3>Airborne LiDAR</h3>
+
+            <img src="img/plane.jpg" alt="Plane" class="stretch">
+
+            <p>
+            <small>
+              Requires GNSS/IMU to determine the position, rotation, and motion of the airborne platform.
+            </small>
+            </p>
+          </section>
+
+          <section>
+            <h3>Mobile and UAS LiDAR</h3>
+
+            <img src="img/ricopter.jpg" alt="Ricopter" class="stretch">
+
+          </section>
+
+          <section>
+            <h3>Reflectance of snow at common LiDAR wavelengths</h3>
 
             <img src="img/reflectance.png" alt="Reflectance" class="stretch">
 
@@ -138,24 +157,6 @@
               <li>Digital Elevation Models (DEMs) and other raster imagery</li>
             </ul>
 
-          </section>
-
-          <section>
-            <h3>Terrestrial LiDAR</h3>
-
-            <img src="img/tls.jpg" alt="TLS" class="stretch">
-          </section>
-
-          <section>
-            <h3>Airborne LiDAR</h3>
-
-            <img src="img/plane.jpg" alt="Plane" class="stretch">
-          </section>
-
-          <section>
-            <h3>Mobile and UAS LiDAR</h3>
-
-            <img src="img/ricopter.jpg" alt="Ricopter" class="stretch">
           </section>
 
         </section>
@@ -191,7 +192,7 @@
           </section>
 
           <section data-background="img/east-wall-ge.jpg"></section>
-          <section data-background="img/east-wall-ge-paths.jpg" data-background-transition="none"></section>
+          <section data-background="img/east-wall-ge-paths.jpg"></section>
           <section data-background="img/2016.01.21.EastWall.HS.png"></section>
           <section data-background="img/2016.01.21.EastWall.dHS.2016.01.18.png"></section>
           <section data-background="img/2014.02.01.EastWall.dHS.2014.01.23.png"></section>
@@ -229,6 +230,7 @@
 				progress: true,
 				history: true,
 				center: true,
+        backgroundTransition: "none",
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
