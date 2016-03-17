@@ -10,13 +10,14 @@ coarse$GrainSize <- "Coarse"
 
 snow <- rbind(small, medium, coarse)
 
-ggplot(snow, aes(Wavelength, Reflectance, colour = GrainSize)) +
+ggplot(snow, aes(Wavelength, Reflectance, linetype = GrainSize)) +
   geom_line() +
   scale_x_continuous(limits = c(0.3, 2.0)) +
-  geom_vline(linetype = "dashed", xintercept = 1064e-3) +
-  geom_vline(linetype = "dashed", xintercept = 1550e-3) +
-  scale_color_discrete(guide = guide_legend(title = "Grain size")) +
+  geom_vline(xintercept = 1064e-3, size = 0.2, colour = "red") +
+  geom_vline(xintercept = 1550e-3, size = 0.2, colour = "red") +
+  scale_linetype_discrete(guide = guide_legend(title = "Grain size")) +
   xlab("Wavelength (µm)") +
   ylab("Reflecance (%)") +
-  ggtitle("Reflectance of snow, with two common LiDAR wavelengths marked")
+  ggtitle("Reflectance of snow, with two common LiDAR wavelengths marked") +
+  theme_bw()
 ggsave("img/reflectance.png")
