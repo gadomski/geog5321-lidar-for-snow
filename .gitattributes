@@ -1,0 +1,4 @@
+rasters/UB20150430_SUPERsnow_depth_50p0m_agg filter=lfs diff=lfs merge=lfs -text
+rasters/UB20150430_SUPERswe_50p0m_agg filter=lfs diff=lfs merge=lfs -text
+rasters/USCOUB20150429f1a1_dem_50p0m filter=lfs diff=lfs merge=lfs -text
+rasters/co_relief100m.zip filter=lfs diff=lfs merge=lfs -text
