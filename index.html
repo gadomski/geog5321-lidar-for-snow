@@ -76,7 +76,7 @@
         </section>
 
         <section>
-          <h3>Manual snow depth surveys have problems</h3>
+          <h3>Manual snow depth surveys are imperfect</h3>
           <img src="img/green-lakes.png" alt="Green Lakes" class="stretch">
           <p><small>Erickson, T. A., Williams, M. W., &amp; Winstral, A. (2005). Persistence of topographic controls on the spatial distribution of snow in rugged mountain terrain, Colorado, United States. Water Resources Research, 41(4), 1–17. http://doi.org/10.1029/2003WR002973</small></p>
 
@@ -92,6 +92,17 @@
         </section>
 
         <section>
+          <h2>Remote sensing options</h2>
+
+          <ul>
+            <li><strong>Gamma ray attenuation</strong>: only gets SWE</li>
+            <li><strong>Microwaves/Radar</strong>: snowpack penetration that varies with snow moisture can confound surface detection</li>
+            <li><strong>Stereo imagery</strong>: can be used for snow depths, but the featureless snow surface often makes registration problematic</li>
+            <li><strong>LiDAR</strong>: little to no snowpack penetration (&lt; 2cm) and high signal-to-noise makes it good for long-range snowpack measurements (with caveats)</li>
+          </ul>
+        </section>
+
+        <section>
           <section>
             <h2>LiDAR</h2>
 
@@ -103,11 +114,17 @@
           <section>
             <h3>Time-of-flight</h3>
 
-            <img src="img/scanner.svg" alt="scanner" height="300" class="plain">
+            <img src="img/scanner.svg" alt="scanner" class="stretch plain">
 
             <p>
               $$ d = c \frac {t} {2} $$
             </p>
+          </section>
+
+          <section>
+            <h3>Moving laser beam</h3>
+
+            <img src="img/lidar-schematic.svg" alt="mirror" class="stretch plain">
           </section>
 
           <section>
